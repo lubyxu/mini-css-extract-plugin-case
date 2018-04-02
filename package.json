@@ -1,0 +1,29 @@
+{
+  "name": "min-css",
+  "version": "1.0.0",
+  "description": "min-css-test",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "rm -rf dist",
+    "start": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "fs": "0.0.1-security",
+    "mini-css-extract-plugin": "^0.4.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.4.0"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "webpack-cli": "^2.0.13"
+  }
+}
