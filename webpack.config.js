@@ -15,12 +15,12 @@ module.exports = {
     externals: {
         react: 'react'
     },
-    // plugins: [
-    //     new MiniCssExtractPlugin({
-    //         filename: '[name].[contenthash].css',
-    //         chunkFilename: '[id].[contenthash].css'
-    //     })
-    // ],
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css',
+            chunkFilename: '[id].[contenthash].css'
+        })
+    ],
     optimization: {
         splitChunks: {
             cacheGroups: {
@@ -39,7 +39,7 @@ module.exports = {
             {
                 test: /\.css/,
                 use: [
-                    // MiniCssExtractPlugin.loader,
+                    MiniCssExtractPlugin.loader,
                     'css-loader'
                 ]
             },
